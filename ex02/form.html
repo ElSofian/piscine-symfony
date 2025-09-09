@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Form</title>
+		<script src="./popup.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
+				width: 300px;
+				margin: 0 auto;
+			}
+
+			.form-input {
+				display: flex;
+				gap: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form>
+			<div class="form-input">
+				<label for="firstname">First Name:</label>
+				<input type="text" id="firstname" name="firstname" required>
+			</div>
+
+			<div class="form-input">
+				<label for="name">Last Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+
+			<div class="form-input">
+				<label for="age">Age:</label>
+				<input type="number" id="age" name="age" required>
+			</div>
+
+			<div class="form-input">
+				<label for="phone">Phone:</label>
+				<input type="phone" id="phone" name="phone" required>
+			</div>
+
+			<div class="form-input">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="form-input">
+				<label for="student">Are you a student at 42?</label>
+				<input type="checkbox" id="student" name="student">
+			</div>
+
+			<div class="form-input">
+				<label for="gender">Gender:</label>
+				<input type="radio" id="gender_male" name="gender" value="male" required>
+				<label for="male">Male</label>
+				<input type="radio" id="gender_female" name="gender" value="female">
+				<label for="female">Female</label>
+				<input type="radio" id="gender_other" name="gender" value="other">
+				<label for="other">Other</label>
+			</div>
+
+			<input type="submit" value="Submit" onClick="displayFormContents()">
+		</form>
+	</body>
+</html>
